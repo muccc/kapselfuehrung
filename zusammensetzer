@@ -1,0 +1,15 @@
+# noetige packets:
+# espeak
+# vorbis-tools
+
+rm -rf ./audio
+mkdir ./audio
+
+cd ./texte
+for i in ./*
+do
+  #make .wav files from textfiles in ./texte
+  espeak -f $i -s 140 -w ../audio/$i.wav -vde -g 6 # +whisper
+  #Konvertierung in .ogg
+  oggenc ../audio/$i.wav
+done
