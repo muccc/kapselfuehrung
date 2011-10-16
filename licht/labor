@@ -1,0 +1,3 @@
+#echo "Cs alarm 1" | nc laboralarm.local 2311
+#sleep 1s
+#echo "Cs alarm 0" | nc laboralarm.local 2311

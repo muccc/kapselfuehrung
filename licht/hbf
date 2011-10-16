@@ -1,0 +1,13 @@
+echo -e 'F\xff\x00\xff\x01\x00'|nc -q 1 -u -v hbf14.local 2323
+echo -e 'F\xff\xff\xff\x01\x00'|nc -q 1 -u -v hbf14.local 2323
+echo -e 'F\xff\x00\xff\x01\x00'|nc -q 1 -u -v hbf14.local 2323
+
+#F\xff\x00\xff\x01\x00 faden\r\g\b\geschw\geschw
+#C\xff\x00\xff farbe setzen
+#r reset
+#hbf14.local adresse der Lampe
+
+
+# Weisse Lampe vorfuehren
+# flackern der moodlamps zur erwaehnung
+# angenehmes langsames fading, das so dann weiterlaeuft

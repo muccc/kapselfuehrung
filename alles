@@ -1,0 +1,14 @@
+#verbindet ton mit licht
+#./audio
+#./licht
+
+for i in kueche* luftschleuse* labor* medienraum* hbf* *
+do
+  sh ./licht/$i &
+  # licht/$i runs in background because of &
+  lichtpid=$!
+  #take ID from light process
+  # $! is ID of last started process in background
+  mplayer ./audio/$i.ogg
+  kill $lichtpid
+done

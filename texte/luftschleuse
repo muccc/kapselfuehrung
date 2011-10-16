@@ -1,0 +1,12 @@
+So, weiter gehts!
+
+Dieser kleine Kasten hier oben ist unsere sogenannten Luftschleuse. Luftschleuse, weil sie die Tür - also eine Luftschleuse - steuert. 
+Das funktioniert so: In dem Kasten ist unter anderem eine Fonera, also ein WLAN acess point.
+Die Fonera macht ne spezielle SSID - auf der loggt man sich ein, und wenn man schlüsselträger ist.
+Jeder Schlüsseltraeger hat einen eigenen ssh key mit dem er sich authentifizieren kann.
+SSH wird normalerweise von Administratoren verwendet um sich auf anderen Rechnern einzuloggen.
+
+Wenn ein schlüsseltraeger sich auf der Luftschleuse eingeloggt hat, kann er also über die darin verbaute Elektronik den Befehl geben, die Tuer zu oeffnen.
+Dieser setzt dann den Motor hier unten in Gang, der das Schloss öffnet.
+Zumindest meistens klappt das.
+
